@@ -56,7 +56,7 @@ const HotelsView = (props) => {
                 </div>
               </CardContent>
               <CardActions>
-                <Button onClick={()=>hotelMap({latitude:parseInt(item.latitude), longitude:parseInt(item.longitude)})} size="small">View On Map</Button>
+                <Button onClick={()=>hotelMap({latitude:parseFloat(item.latitude), longitude:parseFloat(item.longitude)})} size="small">View On Map</Button>
               </CardActions>
             </Card>
           );
